@@ -10,7 +10,7 @@ const Post = (props) => {
       <img src="https://скачать-ватсап-бесплатно.рус/wp-content/uploads/2018/10/avatarki-dlya-muzhchin-v-whatsapp-5.jpg" alt="" />
       {props.message}
       <div>
-        <span>like</span>
+        <span>like {props.likeCount}</span>
       </div>
     </div>
   )

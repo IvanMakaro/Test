@@ -1,0 +1,25 @@
+.dialogs{
+    display: grid;
+    grid-template-columns: 2fr  10fr;
+    color: white;
+}
+.dialogs_items{
+
+}
+.dialog{
+    padding: 4px;
+    font-size: 22px;
+}
+.dialog a{
+    text-decoration: none;
+    color: white;
+}
+.dialog a:hover{
+    background: #777777;
+}
+.dialogs_items .active{
+    color: gold;
+}
+
+
+
