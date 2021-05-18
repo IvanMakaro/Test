@@ -9,6 +9,7 @@ const MyPosts = (props) => {
     let ref = React.createRef()
 
     let addPost=()=>{
+
         props.addPost()
 
 
