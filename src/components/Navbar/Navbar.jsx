@@ -9,7 +9,7 @@ const Navbar = (props) => {
 
 
 
-    let FriendElements = props.friends.map(elem => <Friend id = {elem.id} name = {elem.name}/>)
+    let FriendElements = props.friendsPage.map(elem => <Friend id = {elem.id} name = {elem.name}/>)
 
     return <nav className={s.nav}>
         <div className={s.item}>
