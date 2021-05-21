@@ -1,12 +1,11 @@
 import React from 'react';
 import s from './Navbar.module.css'
 import {NavLink} from "react-router-dom";
-import DialogItem from "../Dialogs/DialogItem/DialogItem";
 import Friend from "./Friend/Friend";
 
 
-const Navbar = (props) => {
 
+const Navbar = (props) => {
 
 
     let FriendElements = props.friendsPage.map(elem => <Friend id = {elem.id} name = {elem.name}/>)

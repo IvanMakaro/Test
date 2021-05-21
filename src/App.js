@@ -10,12 +10,13 @@ import News from "./components/News/News";
 import {Route} from "react-router-dom";
 
 
-
 const App = (props) => {
+debugger
   return (
             <div className='app-wrapper'>
                 <Header/>
                 <Navbar friendsPage = {props.state.friendsPage}/>
+
             <div className='app-wrapper-content'>
 
                 <Route exact path='/dialogs' render = {() => <Dialogs

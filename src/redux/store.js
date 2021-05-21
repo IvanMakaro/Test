@@ -17,9 +17,10 @@ import sidebarReducer from "./sidebar-reducer";
                 posts: [
                     {id: 1, message: "Hi,how are you", likeCount: 0},
                     {id: 2, message: "My first post", likeCount: 24}
-                ]
+                ],
+                newPostText: 'it-kom'
             },
-            newPostText: 'it-kom',
+
             dialogsPage: {
                 dialogs: [
                     {id: 1, name: 'Dimych'},
