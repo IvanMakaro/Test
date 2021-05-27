@@ -10,22 +10,24 @@ import DialogContainer from "./components/Dialogs/DialogsContainer";
 import NavbarContainer from "./components/Navbar/NavbarContainer";
 
 
-const App = (props) => {
-debugger
-  return (
-            <div className='app-wrapper'>
-                <Header/>
-                <NavbarContainer/>
+const App = () => {
+    debugger
+    return (
+        <div className='app-wrapper'>
+            <Header/>
+            <NavbarContainer/>
 
             <div className='app-wrapper-content'>
-                <Route exact path='/dialogs' render = {() => <DialogContainer/>}/>
-                <Route exact path='/profile' render = {() => <Profile/>}/>
-                <Route exact path='/news' render = {() => <News/>}/>
-                <Route exact path='/music' render = {() => <Music/>}/>
-                <Route exact path='/settings' render = {() => <Settings/>}/>
+                <Route exact path='/dialogs' render={() => <DialogContainer/>}/>
+                <Route exact path='/profile' render={() => <Profile/>}/>
+                <Route exact path='/news' render={() => <News/>}/>
+                <Route exact path='/music' render={() => <Music/>}/>
+                <Route exact path='/settings' render={() => <Settings/>}/>
+                {/*<Route exact path='/users' render = {() => <Users/>}/>*/}
+
             </div>
         </div>
-        )
+    )
 }
 
 export default App;

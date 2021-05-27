@@ -5,7 +5,7 @@ import Post from './Post/Post';
 
 const MyPosts = (props) => {
 
-    let postElement = props.profilePage.posts.map(elem => <Post message={elem.message} likeCount={elem.likeCount}/>)
+    let postElement = props.profilePage.posts.map(elem => <Post message={elem.message} key={elem.id} likeCount={elem.likeCount}/>)
     let ref = React.createRef()
 
 
