@@ -14,7 +14,6 @@ const MyPosts = (props) => {
 
     let onPostChange = () => {
         let text = ref.current.value;
-
         props.onPostChange(text)
     }
 
@@ -24,7 +23,7 @@ const MyPosts = (props) => {
             My posts
             <div>
                 <div>
-                    <textarea onChange={onPostChange} ref={ref} value={props.profilePage.newPostText}/>
+                    <textarea onChange={onPostChange} ref={ref} value={props.profilePage.newPostText} placeholder={'enter  your post'}/>
                 </div>
                 <div>
                     <button onClick={onAddPost}>Add post</button>

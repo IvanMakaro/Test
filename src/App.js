@@ -8,10 +8,11 @@ import News from "./components/News/News";
 import {Route} from "react-router-dom";
 import DialogContainer from "./components/Dialogs/DialogsContainer";
 import NavbarContainer from "./components/Navbar/NavbarContainer";
+import UsersContainer from "./components/Users/UsersContainer";
+
 
 
 const App = () => {
-    debugger
     return (
         <div className='app-wrapper'>
             <Header/>
@@ -23,7 +24,7 @@ const App = () => {
                 <Route exact path='/news' render={() => <News/>}/>
                 <Route exact path='/music' render={() => <Music/>}/>
                 <Route exact path='/settings' render={() => <Settings/>}/>
-                {/*<Route exact path='/users' render = {() => <Users/>}/>*/}
+                <Route exact path='/users' render = {() => <UsersContainer/>}/>
 
             </div>
         </div>
